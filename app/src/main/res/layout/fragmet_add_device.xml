@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:form="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.wayto.android.widget.FormWriteView
+        android:id="@+id/AddDeviceFragment_name_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        form:wvHint="输入名称"
+        form:wvItemName="上报名称" />
+
+    <com.wayto.android.widget.FormWriteView
+        android:id="@+id/AddDeviceFragment_unit_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        form:wvHint="输入单位"
+        form:wvItemName="上报单位" />
+
+    <com.wayto.android.widget.FormWriteView
+        android:id="@+id/AddDeviceFragment_remark_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        form:wvHint="输入描述"
+        form:wvItemName="上报描述" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="5dip"
+        android:paddingTop="8dip">
+
+        <TextView
+            android:id="@+id/AddDeviceFragment_location_name_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:minWidth="90dp"
+            android:text="设施地址:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/AddDeviceFragment_location_addr_textVew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/AddDeviceFragment_location_ibtn"
+            android:layout_toRightOf="@+id/AddDeviceFragment_location_name_ibtn"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/AddDeviceFragment_location_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:src="@mipmap/icon_location" />
+    </RelativeLayout>
+
+    <View style="@style/line_horizontal" />
+
+</LinearLayout>

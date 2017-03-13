@@ -1,0 +1,1 @@
+include ':app', ':wayto_arcgis_sdk'

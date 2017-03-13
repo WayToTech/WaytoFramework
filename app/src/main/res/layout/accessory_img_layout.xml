@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip">
+
+
+        <com.wayto.android.view.AccessoryImageGridView
+            android:id="@+id/accessory_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="10dip"
+            android:listSelector="@color/transparency"
+            android:numColumns="4"
+            android:verticalSpacing="10dip" />
+    </LinearLayout>
+
+
+    <View style="@style/line_horizontal" />
+</LinearLayout>

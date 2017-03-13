@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wayto.android.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <include layout="@layout/user_info_head_layout" />
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/MineFragment_history_seting_textView"
+                style="@style/seting_item_layout"
+                android:drawableLeft="@mipmap/icon_mine_draft"
+                android:drawableRight="@mipmap/arrow_right"
+                android:text="@string/set_history" />
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/MineFragment_Track_seting_textView"
+                style="@style/seting_item_layout"
+                android:drawableLeft="@mipmap/icon_mine_track"
+                android:drawableRight="@mipmap/arrow_right"
+                android:text="@string/set_track_info" />
+
+            <View style="@style/line_horizontal" />
+
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/MineFragment_Message_seting_textView"
+                style="@style/seting_item_layout"
+                android:drawableLeft="@mipmap/icon_mine_msg"
+                android:drawableRight="@mipmap/arrow_right"
+                android:text="@string/set_msg_info" />
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/MineFragment_about_textView"
+                style="@style/seting_item_layout"
+                android:drawableLeft="@mipmap/icon_mine_version"
+                android:drawableRight="@mipmap/arrow_right"
+                android:text="@string/set_about" />
+
+            <View style="@style/line_horizontal" />
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/MineFragment_modify_pwd_textView"
+                style="@style/seting_item_layout"
+                android:drawableLeft="@mipmap/icon_mine_pwd"
+                android:drawableRight="@mipmap/arrow_right"
+                android:text="@string/set_modify_pwd" />
+
+            <View style="@style/line_horizontal" />
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/MineFragment_switch_user_textView"
+                style="@style/seting_item_layout"
+                android:drawableLeft="@mipmap/icon_mine_swicth_user"
+                android:drawableRight="@mipmap/arrow_right"
+                android:text="@string/change_user" />
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/MineFragment_exit_textView"
+                style="@style/seting_item_layout"
+                android:drawableLeft="@mipmap/icon_mine_exit"
+                android:drawableRight="@mipmap/arrow_right"
+                android:text="@string/exit" />
+
+            <View style="@style/line_horizontal" />
+        </LinearLayout>
+    </com.wayto.android.view.ReboundScrollView>
+</LinearLayout>

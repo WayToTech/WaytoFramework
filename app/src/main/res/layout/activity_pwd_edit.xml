@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E8"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="15dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:minWidth="100dp"
+                android:gravity="right|center"
+                android:text="原密码："
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/pwd_edit_old_edit"
+                style="@style/common_edit"
+                android:layout_marginLeft="5dip"
+                android:layout_toLeftOf="@+id/account_close_ib"
+                android:layout_toRightOf="@+id/account"
+                android:hint="输入原密码"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/account_close_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:background="@color/white"
+                android:src="@mipmap/close_circle_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="新密码："
+                android:minWidth="100dp"
+                android:gravity="right|center"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/pwd_edit_new_edit"
+                style="@style/common_edit"
+                android:layout_marginLeft="5dip"
+                android:layout_toLeftOf="@+id/pwd_close_ib"
+                android:layout_toRightOf="@+id/pwd"
+                android:hint="输入新密码"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/pwd_close_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:background="@color/white"
+                android:src="@mipmap/close_circle_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/comfir_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="确认新密码："
+                android:minWidth="100dp"
+                android:gravity="right|center"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/pwd_edit_comfir_edit"
+                style="@style/common_edit"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/comfir_pwd"
+                android:hint="再次确认新密码"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:background="@color/white"
+                android:src="@mipmap/close_circle_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            style="@style/line_horizontal"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

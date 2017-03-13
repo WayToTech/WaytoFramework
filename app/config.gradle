@@ -1,0 +1,73 @@
+android {
+    /**
+     * 配制参数
+     */
+    buildTypes {
+        release {
+            buildConfigField "String", "DOMAI", "\"http://idc.wayto.com.cn:8081/\""
+            buildConfigField "String", "QINIU_DOMAIN", "\"http://img.wayto.com.cn/\""
+            buildConfigField "boolean", "LOGSWITCH", "true"
+        }
+        debug {
+            buildConfigField "String", "DOMAI", "\"http://idc.wayto.com.cn:8081/\""
+            buildConfigField "String", "QINIU_DOMAIN", "\"http://oi7qaq1x0.bkt.clouddn.com/\""
+            /* buildConfigField "String", "QINIU_DOMAIN", "\"http://img.wayto.com.cn/\""*/
+            buildConfigField "boolean", "LOGSWITCH", "false"
+        }
+    }
+
+    defaultConfig {
+        /**
+         * manifest文件配制
+         */
+        /*启动自动记录足迹开关,默认关*/
+        buildConfigField "boolean", "TRACK_SWITCH", "false";
+        /*高德地图Key*/
+        resValue "string", "GAODE_MAP_KEY", "\"e408194b83dedc22912c5399dced2d1c\""
+        /*百度地图AK*/
+        resValue "string", "BAIDU_MAP_KEY", "\"emqy5SDbNfz63G6fMqXMZlyoSWl2EExu\""
+        /*腾讯Bugly ID*/
+        buildConfigField "String", "BUGLY_ID", "\"590a3b733e\""
+        /*逆向地理编码Key*/
+        buildConfigField "String", "REGEO_MAP_KEY", "\"a7313eca70306f96eb6a3e6341a12355\""
+        /*百度语音APP ID*/
+        buildConfigField "String", "BAIDUTTS_APP_ID", "\"9137888\""
+        /*百度语音APP KEY*/
+        buildConfigField "String", "BAIDUTTS_APP_KEY", "\"enf7UI6Lddbkp5ORGgyrtAeh\""
+        /*百度语音SECRET_KEY*/
+        buildConfigField "String", "BAIDUTTS_SECRET_KEY", "\"8fafb25541c3c0d0706c04b5f36d5eca\""
+        /*百度鹰眼Service ID*/
+        buildConfigField "Integer", "BAIDUTRACK_SERVICE_ID", "1111111";
+        /*百度鹰眼Entity Name*/
+        buildConfigField "String", "BAIDUTRACK_ENTITY_NAME", "\"wt_xx_\"";
+        /*七牛文件名*/
+        buildConfigField "String", "QINIU_FILENAME", "\"wayto_base\""
+        /*设施图层*/
+        buildConfigField "String", "DEVICE_MAP_LAYER", "\"http://116.7.249.34:6080/arcgis/rest/services/XhsAppNew/FeatureServer/0\""
+
+        /*------------------------------------------------------------------------------*/
+        /**
+         * Base配制
+         */
+        /*七年Token URL*/
+        buildConfigField "String", "QINIU_TOKEN_URL", "\"v3/config/qiniu\""
+        /*版本更新*/
+        buildConfigField "String", "CHECK_APP_VERSION_URL", "\"v2/config/ver\""
+        /*电量上报*/
+        buildConfigField "String", "BATTERY_UPLOAD_URL", "\"v1/electriclog\""
+        /*位置上传*/
+        buildConfigField "String", "REFRESH_LOCATION_URL", "\"v3/user/refreshLocation\""
+
+        /*------------------------------------------------------------------------------*/
+        /**
+         * 登录、用户信息相关
+         */
+        /*登录*/
+        buildConfigField "String", "LOGIN_URL", "\"token\""
+        /*修改用户信息*/
+        buildConfigField "String", "MODIFY_USER_HEAD_URL", "\"v2/user/icon/\""
+        /*修改用户密码*/
+        buildConfigField "String", "MODIFY_USER_PWD_URL", "\"v2/account/changepwd/\""
+
+    }
+}

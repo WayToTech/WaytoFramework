@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--BottomNavigationBar样式-->
+    <declare-styleable name="BottomNavigationBar">
+        <attr name="bnbElevation" format="dimension" />
+        <attr name="bnbActiveColor" format="color" />
+        <attr name="bnbInactiveColor" format="color" />
+        <attr name="bnbBackgroundColor" format="color" />
+        <attr name="bnbAnimationDuration" format="integer" />
+        <attr name="bnbMode" format="enum">
+            <enum name="mode_default" value="0" />
+            <enum name="mode_fixed" value="1" />
+            <enum name="mode_shifting" value="2" />
+        </attr>
+        <attr name="bnbBackgroundStyle" format="enum">
+            <enum name="background_style_default" value="0" />
+            <enum name="background_style_static" value="1" />
+            <enum name="background_style_ripple" value="2" />
+        </attr>
+        <attr name="bnbAutoHideEnabled" format="boolean" />
+    </declare-styleable>
+    <!--Progress样式-->
+    <declare-styleable name="IProgressAttr">
+        <attr name="IarcColor" format="reference|color" />
+        <attr name="IborderWidth" format="reference|dimension" />
+    </declare-styleable>
+    <!--resetEditView样式-->
+    <declare-styleable name="ResetEditView">
+        <attr name="edite_icon" format="reference" />
+        <attr name="edit_hint" format="string" />
+        <attr name="edit_inputType" format="enum">
+            <enum name="password" value="0x10"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference"/>
+        <attr name="kswThumbColor" format="color|reference"/>
+        <attr name="kswThumbMargin" format="dimension|reference"/>
+        <attr name="kswThumbMarginTop" format="dimension|reference"/>
+        <attr name="kswThumbMarginBottom" format="dimension|reference"/>
+        <attr name="kswThumbMarginLeft" format="dimension|reference"/>
+        <attr name="kswThumbMarginRight" format="dimension|reference"/>
+        <attr name="kswThumbWidth" format="dimension|reference"/>
+        <attr name="kswThumbHeight" format="dimension|reference"/>
+        <attr name="kswThumbRadius" format="dimension|reference"/>
+        <attr name="kswBackRadius" format="dimension|reference"/>
+        <attr name="kswBackDrawable" format="reference"/>
+        <attr name="kswBackColor" format="color|reference"/>
+        <attr name="kswFadeBack" format="boolean"/>
+        <attr name="kswBackMeasureRatio" format="float"/>
+        <attr name="kswAnimationDuration" format="integer"/>
+        <attr name="kswTintColor" format="color|reference"/>
+        <attr name="kswTextOn" format="string"/>
+        <attr name="kswTextOff" format="string"/>
+        <attr name="kswTextMarginH" format="dimension"/>
+        <attr name="kswAutoAdjustTextPosition" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FormWriteView">
+        <attr name="wvItemName" format="string" />
+        <attr name="wvHint" format="string" />
+        <attr name="wvForcible" format="boolean" />
+        <attr name="wvInputType">
+            <enum name="text" value="0"/>
+            <enum name="num" value="1"/>
+            <enum name="phone" value="2"/>
+            <enum name="code" value="3"/>
+        </attr>
+        <attr name="wvUnit" format="string"/>
+    </declare-styleable>
+</resources>
